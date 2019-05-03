@@ -8,14 +8,9 @@ public class Cloud extends Mobile{
 	private static String IMAGE= "cloud";
 	
 	
-	
-	public Cloud(Direction direction, Position position, Dimension dimension, int speed, String image) {
-		super(direction, position, dimension, speed, image);
-		// TODO Auto-generated constructor stub
-	}
 
 	public Cloud(Direction direction, Dimension dimension) {
-		super();
+		super(direction, new Position(1, 2, 3, 4), dimension, SPEED, IMAGE );
 		
 	}
 
