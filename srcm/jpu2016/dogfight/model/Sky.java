@@ -3,20 +3,22 @@ import java.awt.Image;
 
 public class Sky implements IArea {
 	private Dimension dimension;
+	private Image image;
 	public Sky(Dimension dimension) {
-		Image image;
+		//image = new Image();
 	}
 
 	@Override
 	public Dimension getDimension() {
 		// TODO Auto-generated method stub
-		return null;
+		return dimension;
 	}
 
 	@Override
 	public Image getImage() {
 		// TODO Auto-generated method stub
-		return null;
+		
+		return image;
 	}
 
 }

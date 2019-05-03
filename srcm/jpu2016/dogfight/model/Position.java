@@ -6,6 +6,8 @@ public class Position {
 	private double y;
 	private double maxX;
 	private double maxY;
+	private Position position = new Position(x, y, maxX, maxY);
+	
 	public Position(double x, double y, double maxX, double maxY) {
 		super();
 		this.x = x;
@@ -15,11 +17,11 @@ public class Position {
 	}
 	
 	public Position(Position position) {
-		
+		this.position = position;
 	}
 
 	public double getX() {
-		return x;
+		return 1;
 	}
 
 	public void setX(double x) {
@@ -27,7 +29,7 @@ public class Position {
 	}
 
 	public double getY() {
-		return y;
+		return 1;
 	}
 
 	public void setY(double y) {
@@ -35,7 +37,7 @@ public class Position {
 	}
 
 	protected double getMaxX() {
-		return maxX;
+		return 1;
 	}
 
 	protected void setMaxX(double maxX) {
@@ -43,7 +45,7 @@ public class Position {
 	}
 
 	protected double getMaxY() {
-		return maxY;
+		return 1;
 	}
 
 	protected void setMaxY(double maxY) {

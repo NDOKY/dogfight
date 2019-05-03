@@ -4,39 +4,42 @@ import java.util.ArrayList;
 import java.util.Observable;
 
 public class DogfightModel extends Observable implements IDogfightModel {
-	private IMobile mobiles;
-	public DogfightModel(IMobile mobiles) {
-		Sky sky;
+	private Sky sky;
+	private IMobile player;
+	private ArrayList<IMobile> mobiles;
+	public DogfightModel() {
+		mobiles = new ArrayList<IMobile>();
 	}
 
 	@Override
 	public IArea getArea() {
 		// TODO Auto-generated method stub
-		return null;
+		return sky;
 	}
 
 	@Override
 	public void buildArea(Dimension dimension) {
 		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void addMobile(IMobile mobile) {
+		// TODO Auto-generated method stub
+		mobiles.add(mobile);
 
 	}
 
 	@Override
-	public void addMobile(IMobile Mobile) {
+	public void removeMobile(IMobile mobile) {
 		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void removeMobile(IMobile Mobile) {
-		// TODO Auto-generated method stub
+		mobiles.remove(mobile);
 
 	}
 
 	@Override
 	public ArrayList<IMobile> getMobiles() {
 		// TODO Auto-generated method stub
-		return null;
+		return mobiles;
 	}
 
 	@Override
