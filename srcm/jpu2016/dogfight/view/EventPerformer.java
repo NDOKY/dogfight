@@ -11,19 +11,37 @@ public class EventPerformer implements IEventPerformer {
 	//private DogfightView eventPerformer=new DogfightView(IOrderPerformer orderPerformer);
 	
 	private IOrderPerformer orderPerformer;
-	public EventPerformer() {
+	private IEventPerformer performer;
+	private UserOrder userorder;
+	
+	public EventPerformer(IOrderPerformer orderPerformer) {
 		super();
 		// TODO Auto-generated constructor stub
 		//IOrderPerformer orderPerformer
+		this.performer=performer;
 		
 	}
 	private UserOrder keyCodeToUserOrder(int keyOrder) {
-		return null;
+		return userorder;
 	}
 	public void eventPerform(KeyEvent keyCode) {
 		// TODO Auto-generated method stub
 		
 	}
+	public IOrderPerformer getOrderPerformer() {
+		return orderPerformer;
+	}
+	public void setOrderPerformer(IOrderPerformer orderPerformer) {
+		this.orderPerformer = orderPerformer;
+	}
+	public IEventPerformer getPerformer() {
+		return performer;
+	}
+	public void setPerformer(IEventPerformer performer) {
+		this.performer = performer;
+	}
+	
+	
 	
 
 }

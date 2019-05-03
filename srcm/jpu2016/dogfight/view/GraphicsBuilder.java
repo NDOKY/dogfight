@@ -17,7 +17,7 @@ public class GraphicsBuilder implements IGraphicsBuilder {
 	public GraphicsBuilder(IDogfightModel  dogfightModel) {
 		super();
 		// TODO Auto-generated constructor stub
-		emptySky=new BufferedImage(); 
+		emptySky=new BufferedImage(1, 1, 1); 
 		this.dogfightModel=dogfightModel;
 		
 	}
@@ -26,11 +26,11 @@ public class GraphicsBuilder implements IGraphicsBuilder {
 	}
 	public int getGlobalWidth() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 1;
 	}
 	public int getGlobalHeight() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 1;
 	}
 	public void applyModelToGraphic(Graphics graphics, ImageObserver observer) {
 		// TODO Auto-generated method stub
@@ -39,3 +39,4 @@ public class GraphicsBuilder implements IGraphicsBuilder {
 	
 
 }
+
