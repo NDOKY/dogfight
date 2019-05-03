@@ -3,8 +3,8 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
 
-import dogfightmodel.IDogfightModel;
-import dogfightmodel.IMobile;
+import jpu2016.dogfight.model.IDogfightModel;
+import jpu2016.dogfight.model.IMobile;
 //import jpu2016.gameframe.Graphics;
 import jpu2016.gameframe.IGraphicsBuilder;
 //import jpu2016.gameframe.ImageObserver;

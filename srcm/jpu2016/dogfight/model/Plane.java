@@ -1,4 +1,4 @@
-package dogfightmodel;
+package jpu2016.dogfight.model;
 
 public class Plane extends Mobile {
 	

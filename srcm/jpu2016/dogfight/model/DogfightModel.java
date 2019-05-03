@@ -1,4 +1,4 @@
-package dogfightmodel;
+package jpu2016.dogfight.model;
 
 import java.util.ArrayList;
 import java.util.Observable;
